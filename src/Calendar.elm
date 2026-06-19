@@ -6,8 +6,9 @@ module Calendar exposing
     , shiftMonth
     )
 
-{-| Month-grid generator and navigation. Produces a stable 6×7 grid so the
-calendar never jumps height between months. Days are laid out Monday-first.
+{-| Month-grid generator and navigation. Renders 5 or 6 week rows depending on
+how the month falls — a trailing row of only next-month days is dropped. Days
+are laid out Monday-first.
 -}
 
 import Date exposing (Date)
@@ -40,9 +41,10 @@ isCurrentMonth today cursor =
     Date.year cursor == Date.year today && Date.month cursor == Date.month today
 
 
-{-| The 6×7 grid for the month at `cursor` (which must be a first-of-month date),
-with `today` flagged. Leading/trailing days from adjacent months are included
-and marked `inCurrentMonth = False`.
+{-| The week×7 grid for the month at `cursor` (which must be a first-of-month
+date), with `today` flagged. Leading/trailing days from adjacent months are
+included and marked `inCurrentMonth = False`. Renders 5 or 6 week rows depending
+on how the month falls — a trailing row of only next-month days is dropped.
 -}
 monthGrid : Date -> Date -> List (List CalendarDay)
 monthGrid today cursor =
@@ -50,6 +52,12 @@ monthGrid today cursor =
         -- Date.weekdayNumber is Monday=1 … Sunday=7.
         leading =
             Date.weekdayNumber cursor - 1
+
+        daysInMonth =
+            Date.diff Date.Days cursor (Date.add Date.Months 1 cursor)
+
+        weekCount =
+            (leading + daysInMonth + 6) // 7
 
         gridStart =
             addDays (negate leading) cursor
@@ -64,5 +72,5 @@ monthGrid today cursor =
             , isToday = isSameDay date today
             }
     in
-    List.range 0 5
+    List.range 0 (weekCount - 1)
         |> List.map (\week -> List.map (\day -> toDay (week * 7 + day)) (List.range 0 6))
