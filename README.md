@@ -1,6 +1,6 @@
 # booking_widget_elm
 
-🇷🇺 [Читать на русском](./README-RU.md)
+🇷🇺 [Читать на русском](./README-RU.md) · 🚀 **[Live demo](https://fellz.github.io/booking-widget-elm/)**
 
 An [Elm](https://elm-lang.org) (The Elm Architecture) reimplementation of the
 Vue 3 hotel booking widget in `../booking_widget`, built to measure how many of

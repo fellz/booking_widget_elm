@@ -1,6 +1,6 @@
 # booking_widget_elm
 
-🇬🇧 [Read in English](./README.md)
+🇬🇧 [Read in English](./README.md) · 🚀 **[Живое демо](https://fellz.github.io/booking-widget-elm/)**
 
 Реализация виджета бронирования номера на [Elm](https://elm-lang.org) (The Elm
 Architecture) — порт Vue 3-виджета из `../booking_widget`. Цель — измерить,
