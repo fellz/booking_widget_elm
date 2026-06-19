@@ -3,7 +3,7 @@
 🇷🇺 [Читать на русском](./README-RU.md) · 🚀 **[Live demo](https://fellz.github.io/booking-widget-elm/)**
 
 An [Elm](https://elm-lang.org) (The Elm Architecture) reimplementation of the
-Vue 3 hotel booking widget in `../booking_widget`, built to measure how many of
+[Vue 3 hotel booking widget](https://github.com/fellz/booking_widget) ([demo](https://fellz.github.io/booking_widget/)), built to measure how many of
 the original's **correctness holes** a pure TEA architecture with a strong,
 inference-driven type system closes structurally — not by remembering to be careful.
 

@@ -11,9 +11,9 @@ Elm — структурно, а не «не забыл проверить»?**
 календарь и граница данных mock/http. Разница — целиком в том, *как смоделировано
 состояние и как выражены переходы*.
 
-- Vue-версия: `../booking_widget`
-- Effect/foldkit-версия: `../booking_widget_effect`
-- Elm-версия: этот проект (`src/`)
+- Vue-версия: [репозиторий](https://github.com/fellz/booking_widget) · [демо](https://fellz.github.io/booking_widget/)
+- Effect/foldkit-версия: [репозиторий](https://github.com/fellz/booking_widget_effect) · [демо](https://fellz.github.io/booking_widget_effect/)
+- Elm-версия: этот проект (`src/`) · [демо](https://fellz.github.io/booking-widget-elm/)
 
 Запуск: `npm run dev`. Проверка: `npm test` (77 тестов), `npm run typecheck`, `npm run build`.
 
