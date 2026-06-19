@@ -18,6 +18,8 @@ Architecture) — порт Vue 3-виджета из `../booking_widget`. Цел
 
 ## Архитектура
 
+![The Elm Architecture: Model рендерится функцией view в Html, действие пользователя порождает Msg, update сворачивает его в новый Model и Cmd, а рантайм выполняет эффекты Cmd, чьи результаты возвращаются новыми Msg.](./docs/the-elm-architecture.svg)
+
 | Слой | Файл |
 |------|------|
 | Домен — чистые типы и правила, без `Browser`/`Html` | `src/Domain/` |

@@ -17,6 +17,8 @@ mapping (12 of 13 holes closed structurally, 1 in practice, 0 left open).
 
 ## Architecture
 
+![The Elm Architecture: Model is rendered by view to Html, user input produces a Msg, update folds it into a new Model and a Cmd, and the runtime performs the Cmd's effects whose results return as further Msgs.](./docs/the-elm-architecture.svg)
+
 | Concern | File |
 |---------|------|
 | Domain — pure types & rules, no `Browser`/`Html` | `src/Domain/` |
