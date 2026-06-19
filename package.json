@@ -1,5 +1,5 @@
 {
-  "name": "booking-widget-elm",
+  "name": "booking_widget_elm",
   "version": "1.0.0",
   "description": "Демо-виджет бронирования номера в отеле — Elm (The Elm Architecture)",
   "type": "module",

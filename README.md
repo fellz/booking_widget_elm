@@ -1,6 +1,6 @@
 # booking_widget_elm
 
-🇷🇺 [Читать на русском](./README-RU.md) · 🚀 **[Live demo](https://fellz.github.io/booking-widget-elm/)**
+🇷🇺 [Читать на русском](./README-RU.md) · 🚀 **[Live demo](https://fellz.github.io/booking_widget_elm/)**
 
 An [Elm](https://elm-lang.org) (The Elm Architecture) reimplementation of the
 [Vue 3 hotel booking widget](https://github.com/fellz/booking_widget) ([demo](https://fellz.github.io/booking_widget/)), built to measure how many of

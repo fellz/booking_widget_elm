@@ -13,7 +13,7 @@ transitions are expressed*.
 
 - Vue version: [repo](https://github.com/fellz/booking_widget) · [live demo](https://fellz.github.io/booking_widget/)
 - Effect/foldkit version: [repo](https://github.com/fellz/booking_widget_effect) · [live demo](https://fellz.github.io/booking_widget_effect/)
-- Elm version: this project (`src/`) · [live demo](https://fellz.github.io/booking-widget-elm/)
+- Elm version: this project (`src/`) · [live demo](https://fellz.github.io/booking_widget_elm/)
 
 Run it: `npm run dev`. Verify it: `npm test` (77 tests), `npm run typecheck`, `npm run build`.
 
